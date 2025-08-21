@@ -1,6 +1,77 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/563/original/clock.jpg?1755785700");
+
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: transparent;
+  color: white;
+  padding: 30px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  color: white;
+  border: white solid;
+  box-shadow: 0 0 5px white, 0 0 10px white;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+.date {
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 40px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border: white solid;
+  border-radius: 20px;
+
+  color: white;
+  text-shadow: 0 0 5px rgb(247, 213, 23), 0 0 10px rgb(247, 213, 23);
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 24px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+select {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 13px;
+  background-color: black;
+  color: white;
+  border: white solid;
+}
 h1 {
   text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 36px;
+  border: white solid;
+  border-radius: 20px;
+  color: white;
+  background-color: black;
+  text-shadow: 0 0 5px rgb(247, 213, 23), 0 0 10px rgb(247, 213, 23);
 }
 footer {
   text-align: center;
+  color: white;
+  text-shadow: 0 0 5px white, 0 0 10px rgb(247, 213, 23);
 }
