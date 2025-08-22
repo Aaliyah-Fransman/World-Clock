@@ -35,7 +35,6 @@ h2 {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   border: white solid;
   border-radius: 20px;
-
   color: white;
   text-shadow: 0 0 5px rgb(247, 213, 23), 0 0 10px rgb(247, 213, 23);
 }
@@ -59,6 +58,7 @@ select {
   color: white;
   border: white solid;
 }
+
 h1 {
   text-align: center;
   padding: 20px;
