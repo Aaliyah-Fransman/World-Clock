@@ -60,3 +60,37 @@ setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#place");
 citiesSelectElement.addEventListener("change", updateCity);
+
+function showImage() {
+  const select = document.getElementById("place");
+  const image = document.getElementById("cityImage");
+  const value = select.value;
+  const images = {
+    current:
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/717/original/thumbnail_image3_%282%29.jpg?1756056964",
+    "Europe/London":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/620/original/thumbnail_image0_%282%29.jpg?1755902364",
+    "America/New_York":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/714/original/thumbnail_image0_%283%29.jpg?1756056893",
+    "Pacific/Auckland":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/715/original/thumbnail_image1_%281%29.jpg?1756056906",
+    "Asia/Tokyo":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/716/original/thumbnail_image2_%282%29.jpg?1756056922",
+    "Europe/Rome":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/718/original/thumbnail_image0_%284%29.jpg?1756058008",
+    "Asia/Shanghai":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/719/original/thumbnail_image1_%282%29.jpg?1756058047",
+    "Asia/Dubai":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/726/original/thumbnail_image4_%281%29.jpg?1756059064",
+    "Africa/Cairo":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/720/original/thumbnail_image2_%283%29.jpg?1756058089",
+    "Europe/Moscow":
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/721/original/thumbnail_image4_%282%29.jpg?1756058109",
+  };
+  if (images[value]) {
+    image.src = images[value];
+    image.style.display = "block";
+  } else {
+    image.style.display = "none";
+  }
+}

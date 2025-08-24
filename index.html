@@ -11,14 +11,22 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select id="place">
+      <select id="place" onchange="showImage()">
         <option value="">Select a city..</option>
-         <option value="current">My current location</option>
+        <option value="current">My current location</option>
         <option value="Europe/London">London</option>
         <option value="America/New_York">New York</option>
         <option value="Pacific/Auckland">Auckland</option>
         <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Europe/Rome">Rome</option>
+        <option value="Asia/Shanghai">Beijing</option>
+        <option value="Asia/Dubai">Dubai</option>
+        <option value="Africa/Cairo">Cairo</option>
+        <option value="Europe/Moscow">Moscow</option>
       </select>
+      <div>
+        <img id="cityImage" src="" alt="Selected City" />
+      </div>
       <div id="cities">
         <div class="city" id="los-angeles">
           <div>
